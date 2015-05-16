@@ -1,0 +1,69 @@
+{
+    "header": "Work Experience",
+    "body": [
+        {
+            "name": "Yahoo Inc",
+            "color": "#400090",
+            "location": "Santa Monica",
+            "details": [
+                {
+                    "title": "Senior Software Engineer, User Experience Lead",
+                    "team": "Video Experiences",
+                    "timeline": "October 2014 - Present",
+                    "desc": [
+                        "Led a 3 person team tasked to build engaging video modules used all over the Yahoo network; UX improvements and new feature recommendations increased user engagement by 5% over last quarter.",
+                        "Mentored and supervised three new college grads on all aspects of coding and team processes; all of them went on to being highly productive during their first quarter.",
+                        "Developed product and engineering roadmaps, flush out task allocation and organize the scrum board for a team of ten as the Scrum Master."
+                    ]
+                },
+                {
+                    "title": "Software Engineer, Tech Yahoo",
+                    "team": "Yahoo Screen",
+                    "timeline": "July 2013 - Aug 2014",
+                    "desc": [
+                        "Spearheaded the development of 90% of the user facing components for Yahoo’s redesigned video site for all three screens; The new site along with its partner sites facilitated a 76% YoY growth in the number of video streams and currently attracts over 65.3 million users per month.",
+                        "Was awarded the Yahoo You Rock Award for excellence in Q1 2014."
+                    ]
+                },
+                {
+                    "title": "Sofware Engineer Intermediate",
+                    "team": "Yahoo News",
+                    "timeline": "Oct 2012 - June 2013",
+                    "desc": [
+                        "Owned development of the article and slideshow experience for Yahoo News, Sports, Finance and other media sites across three screens as part of the core content presentation team leading the redesign of Yahoo News; Yahoo News site today has over 450 million users per month.",
+                        "Architected a flexible system for developing custom themes for Yahoo media sites in a mere span of three days; The system was widely adopted by over 5 different media properties."
+                    ]
+                },
+                {
+                    "title": "Sofware Engineer Intermediate",
+                    "team": "Yahoo Media Foundation",
+                    "timeline": "July 2011 - Sept 2012",
+                    "desc": [
+                        "Built scaleable client and server side, customer and partner facing applications for the Yahoo Publishing Platform empowering 300+ highly trafficked Yahoo Media websites in over 10 different languages."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "PLUM Agency",
+            "color":"#7211A1",
+            "location": "New York",
+            "details": [
+                {
+                    "title": "Web Developer",
+                    "timeline": "January - July 2011",
+                    "desc" : [
+                        "Developed new features and maintained the company website. Worked with the art director and the founders to understand their core vision, and then came up with new designs and implemented them."
+                    ]
+                },
+                {
+                    "title": "Interactive Technology Intern",
+                    "timeline": "May - August 2010",
+                    "desc": [
+                        "Responsible for refactoring the company’s existing website. Also developed a simple lightweight mobile version of the site."
+                    ]
+                }
+            ]
+        }
+    ]
+}

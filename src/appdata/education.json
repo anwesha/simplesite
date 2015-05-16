@@ -1,0 +1,17 @@
+{
+    "header": "Education",
+    "body": [
+        {
+            "name": "Columbia University",
+            "location": "New York City",
+            "degree": "Masters in Computer Science",
+            "graduation": "December 2010"
+        },
+        {
+            "name": "Heritage Institute of Technology",
+            "location": "Kolkata",
+            "degree": "Bachelor of Technology in Information Technology",
+            "graduation": "July 2009"
+        }
+    ]
+}

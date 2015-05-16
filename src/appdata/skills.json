@@ -1,0 +1,29 @@
+{
+    "header" : "Skills",
+    "body": {
+        "technical": [
+            "Javascript",
+            "Node.js",
+            "YUI",
+            "React.js",
+            "Angular.js",
+            "HTML5",
+            "PHP",
+            "CSS",
+            "SCSS",
+            "Java",
+            "C",
+            "GIT",
+            "Subversion"
+        ],
+        "others": [
+            "Scrum",
+            "Kanban",
+            "Keynote",
+            "Ms Office",
+            "Photoshop",
+            "Illustrator",
+            "Sketch"
+        ]
+    }
+}
