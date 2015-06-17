@@ -5,93 +5,375 @@
 $raleway:'Raleway', sans-serif;
 $josefin:'Josefin Sans', sans-serif;
 
-// Images
-$pathPrefix: "../img/";
-$almaMater: $pathPrefix + "alma_mater2.jpg";
+// Global Vars
+$teal: #2ABABB;
+$coral:#E14943;
+$lightCoral:#FD938F;
+$kindaBlack: #2E3036;
+$kindaGrey: #5A6071;
+$kindaGreen: #51CAA0;
+$purple:#5D3ED4;
 
+$lightenBy: 5%;
+$secBorderWd: 7px;
+
+
+$maxWd: 1280px;
+$minWd: 1000px;
+
+
+$tumblrC:#36465D;
+$linkedinC:#0177B5;
+$flickrC:#FF0084;
+$downloadC:$kindaGreen;
+
+
+$grey1:#DFE0E0;
+$grey2:#ececec;
+
+$imgPath: '../../src/images/';
 
 body,html {
     height:100%;
-    overflow:hidden;
     font-family: $raleway;
+    background: #e6e6e6;
+    //min-width: $minWd;
 }
 
-#heroine {
-    width: 100%;
-    height: 100%;
-    background-image: url($almaMater);
-    background-size: cover;
+// Common
+.pc {
+    @include transform(translate(-50%, -50%));
+    position:absolute;
+    top:50%;
+    left:50%;
+}
+
+.vc {
+    @include transform(translateY(-50%));
+    position:absolute;
+    right:0;
+    top:50%;
+}
+
+.fw-b {
+    font-weight: bold;
+}
+
+.bgimg-cmn {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+}
+
+.stretch-out {
+    position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+}
+
+
+#introduction {
+    color:#333;
+    height:400px;
+    position: relative;
+    max-width: $maxWd;
+    margin:0 auto;
+
+    .name {
+        font-size:60px;
+        font-weight: bold;
+    }
+
+    .last-name {
+        font-weight: bold;
+        color: $coral;
+    }
+
+    .text {
+        margin-top:30px;
+        margin-left: 220px;
+    }
+
+    .intro-img {
+        position: absolute;
+        top: 0;
+        width: 210px;
+        height: 150px;
+        background-image: url($imgPath + "Teal-items.png");
+    }
+}
+
+#main-col {
+    position: relative;
+    width:85%;
+    margin: 0 auto;
+    font-size: 0;
+    max-width: $maxWd;
+    padding-bottom: 60px;
+}
+
+.sections {
+    margin-bottom:60px;
+}
+
+.sec-block:nth-child(2) {
+    background-color: $grey2;
+}
+
+.sec-block {
+    border-top:$secBorderWd solid #ddd;
+    height:400px;
+    width: 33%;
+    font-size:15px;
+    display: inline-block;
+    background-color: $grey1;
+    box-sizing: border-box;
+    padding:10px;
+    vertical-align: top;
+}
+
+
+.hd {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.bd {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 30px 20px;
+    display: inline-block;
+
+    em {
+        font-size: 18px;
+        font-family: $josefin;
+        margin-bottom:5px;
+        font-weight: bold;
+        display: block;
+    }
+
+    p {
+        margin-bottom: 15px;
+    }
+}
+
+.sec-icon {
+    width: 50px;
+    height: 50px;
+    margin: 10px auto 15px auto;
+}
+
+
+.about-me {
+    border-top-color: $teal;
+    .sec-icon { background-image: url($imgPath + "about.png"); }
+}
+
+.education {
+    border-top-color: $coral;
+    .sec-icon { background-image: url($imgPath + "edu.png"); }
+    em {
+        font-size: 20px;
+    }
+}
+
+.skills {
+    border-top-color: $kindaGreen;
+    .sec-icon { background-image: url($imgPath + "tools.png"); }
+
+    .bd { width:80%; }
+    ul {
+        display: inline-block;
+        vertical-align: top;
+        width:48%;
+    }
+}
+
+
+$workHt: 525px;
+
+.work {
+    width: 66%;
+    border-top-color: $purple;
+    height: $workHt;
+
+    .sec-icon { background-image: url($imgPath + "skills.png"); }
+    .fw-b { font-size:20px; margin-left: 20px }
+    .fw-b:last-child {
+        margin:40px 0 30px;
+    }
+
+    .timeline {
+        font-size:12px;
+        display: block;
+        margin:-5px 0 10px;
+    }
+
+    ul {
+        height: 0;
+        font-size: 13px;
+        overflow: hidden;
+    }
+
+    .bd { margin:30px 0 0 -10px; }
+
+    .pos {
+        cursor:pointer;
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+
+    .pos.current {
+        background-color:$grey2;
+    }
+}
+
+.work-desc {
+    background-color:$grey2;
+    border-top-color: lighten($purple,15%);
+    height: $workHt;
     position: relative;
 
-    .overlay {
-        position:absolute;
-        background-color: rgba(10, 17, 27, 0.7);
-    }
-
-    &, .overlay {
-        top:0;
-        bottom:0;
-        right:0;
-        left:0;
-    }
-
-    .info {
-        font-family: $raleway;
-        color: #FAFAFA;
-        text-align: center;
+    .work-desc-inner {
         position: absolute;
         top:50%;
-        transform: translateY(-50%);
-        -webkit-transform: translateY(-50%);
-        -moz-transform: translateY(-50%);
-        width: 100%;
+        @include transform(translateY(-50%)) ;
+        margin-right: 40px;
     }
+}
 
-    .desc {
-        font-family: $josefin;
-        font-size: 20px;
-        font-weight: 300;
-        margin-bottom: 10px;
-    }
+.ra-tria {
+    width: 0;
+    height: 0;
+    border-bottom: ($workHt - $secBorderWd) solid $grey2;
+    border-left: 150px solid rgba(0, 0, 0, 0);
+    position: absolute;
+    right: 100%;
+    top: 0;
+}
 
-    strong { font-weight: 400; margin-right: 5px; }
-    .name {
-        font-size: 35px;
-        font-weight: 100;
-        padding: 0 40px;
-        margin-bottom: 0;
-        line-height: 50px;
-    }
 
-    .connect ul { margin:0; padding: 0;}
-    .btn::before,.btn::after {
-        content: '';
+.contact-wrap {
+    text-align: center;
+
+    ul {
+        display: inline-block;
+        box-shadow: 0px 1px 1px #D2D2D2;
     }
 
     .btn {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         display: inline-block;
-        background-size: 100%;
+        background-size: 35%;
         background-repeat: no-repeat;
         vertical-align: top;
+        padding: (15px - $secBorderWd) 15px 15px;
+        background-position: 50%;
+        border-top-width: $secBorderWd;
+        border-top-style: solid;
+        background-color: $grey1;
+        @include transition(background-color 0.24s ease-in);
+
+        &:hover {
+            background-color: darken($grey1, $lightenBy);
+        }
     }
 
-    .linkedin { background-image: url($pathPrefix + "linkedin_color.svg"); }
-    .tumblr { background-image: url($pathPrefix + "tumblr_color.svg"); }
-    .flickr {
-        background-image: url($pathPrefix + "flickr_color.svg");
-        background-size: 85%;
-        background-position: center;
+    .btn:nth-child(even) {
+        background-color: $grey2;
+
+        &:hover {
+            background-color: darken($grey2,10%);
+        }
     }
+
+    .linkedin {
+        background-image: url($imgPath + "linkedin.png");
+        border-top-color:$linkedinC;
+    }
+
+    .flickr {
+        background-image: url($imgPath + "flickr.png");
+        border-top-color:$flickrC;
+    }
+
+    .tumblr {
+        background-image: url($imgPath + "tumblr.png");
+        border-top-color:$tumblrC;
+    }
+
     .download {
-        background-image: url($pathPrefix + "download.svg");
-        background-color: #09BD86;
+        background-image: url($imgPath + "download.png");
+        border-top-color:$downloadC;
+    }
+
+    >p {
+        display: none;
+        font-size: 18px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+}
+
+.work-list {
+    li {
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    .num {
+        display: block;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: #CCC;
         border-radius: 100%;
-        background-size: 69%;
-        width: 44px;
-        height: 44px;
-        background-position: 48% 50%;
-        margin: 3px 0 0 3px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        position: absolute;
+    }
+
+    .info {
+        display: inline-block;
+        margin-left: 50px;
+        line-height: 16px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    #introduction {
+        .intro-img {
+            position: relative;
+            margin: 0 auto;
+        }
+
+        .text {
+            .name { font-size: 40px; }
+            .sub-text { font-size:15px; }
+            margin-left: auto;
+            text-align: center;
+        }
+    }
+
+    .sec-block {
+        width:100%;
+        height: auto;
+    }
+
+    .work {
+        .work-list { height: auto; }
+        .pos.current { background-color: transparent; }
+    }
+    .ra-tria { display: none; }
+    .work-desc {
+        display: none;
     }
 }

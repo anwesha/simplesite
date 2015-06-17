@@ -1,10 +1,23 @@
 "use-strict";
 
-var debAppControllers = angular.module("simpleSiteControllers", []);
+var simpleSiteControllers = angular.module("simpleSiteControllers", []);
 
-debAppControllers.controller("SectionCtrl", ["$scope", "$routeParams", "Appdata",
+simpleSiteControllers.controller("SectionCtrl", ["$scope", "$routeParams", "Appdata",
 function ($scope, $routeParams, Appdata) {
-    $scope.aboutme = Appdata.get({secId: $routeParams.secId}, function(secData) {
-      $scope.secData = secData;
+
+    Appdata.get({secId: "heroine"}, function(secData) {
+        $scope.heroine = secData;
+    });
+
+    Appdata.get({secId: "about-me"}, function(secData) {
+        $scope.aboutme = secData;
+    });
+
+    Appdata.get({secId: "education"}, function(secData) {
+        $scope.education = secData;
+    });
+
+    Appdata.get({secId: "skills"}, function(secData) {
+        $scope.skills = secData;
     });
 }]);

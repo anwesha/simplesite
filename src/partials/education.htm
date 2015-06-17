@@ -1,0 +1,10 @@
+<div class="hd">
+    <p class="sec-icon bgimg-cmn"></p> {{education.header}}
+</div>
+
+<div class="bd">
+    <div class="college" ng-repeat="college in education.body">
+        <em class="name">{{college.name}}</em>
+        <p class="degree">{{college.degree}}, {{college.location}}, {{college.graduation}}</p>
+    </div>
+</div>

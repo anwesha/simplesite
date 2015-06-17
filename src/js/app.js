@@ -5,28 +5,22 @@ var simpleSite = angular.module("simpleSite", [
     "ngRoute",
     "ngAnimate",
     "simpleSiteControllers",
-    "simpleSiteServices"
+    "simpleSiteServices",
+    "simpleSiteDirectives"
 ]);
 
 simpleSite.config(["$routeProvider", "$locationProvider",
 function ($routeProvider, $locationProvider) {
-    /*
+    var routePrefix = 'simplesite/src/';
     $routeProvider.
-    when("/:secId",{
+    when("/",{
         templateUrl: function (params) {
-            return "partials/" + params.secId + ".html";
+            return routePrefix + "partials/page.html";
         },
         controller : "SectionCtrl"
     }).
     otherwise({
-        redirectTo: "/splash"
+        redirectTo: "/"
     });
-
-    //check browser support
-    if(window.history && window.history.pushState) {
-     $locationProvider.html5Mode({
-             enabled: true
-      });
-  }*/
 }
 ]);

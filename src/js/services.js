@@ -1,12 +1,12 @@
-var debAppServices = angular.module("simpleSiteServices", ["ngResource"]);
+var simpleSiteServices = angular.module("simpleSiteServices", ["ngResource"]);
 
-debAppServices.factory("Appdata", ["$resource",
+simpleSiteServices.factory("Appdata", ["$resource",
 function ($resource) {
-    return $resource("appdata/:secId.json", {}, {
+    return $resource("simplesite/src/appdata/:secId.json", {}, {
       query: {
             method: "GET",
-            params: { secId: "splash" },
+            params: { secId: "heroine" },
             isArray: false
-          }
+        }
     });
 }]);

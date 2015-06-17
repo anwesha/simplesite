@@ -1,0 +1,30 @@
+{
+    "name": "anwesha",
+    "lastname": "deb",
+    "banner": [
+        "Front End Engineer",
+        "UI/UX Enthusiast"
+    ],
+    "connect": [
+        {
+            "hookClass": "btn linkedin",
+            "url": "https://www.linkedin.com/pub/anwesha-deb/13/b62/4b",
+            "openInNewWindow":true
+        },
+        {
+            "hookClass": "btn flickr",
+            "url": "https://www.flickr.com/photos/anweshadeb",
+            "openInNewWindow":true
+        },
+        {
+            "hookClass": "btn tumblr",
+            "url": "http://anweshadebpictures.tumblr.com/",
+            "openInNewWindow":true
+        },
+        {
+            "hookClass": "btn download",
+            "url": "/webang/anwesha_deb.pdf",
+            "openInNewWindow":false
+        }
+    ]
+}
