@@ -1,0 +1,14 @@
+<div class="hd">
+    <p class="sec-icon bgimg-cmn"></p> {{work.header}}
+</div>
+
+<div class="bd">
+    <div ng-repeat="exp in work.body">
+        <p class="fw-b">{{exp.name}}, {{exp.location}}</p>
+        <div class="pos" ng-repeat="pos in exp.details" ng-mouseenter="updateWorkPos(pos.id)" ng-class="{'current':currentWorkPos == pos.id}" >
+            <em>{{pos.title}}</em>
+            <span class="timeline">{{pos.timeline}}</span>
+        </div>
+        <p></p>
+    </div>
+</div>

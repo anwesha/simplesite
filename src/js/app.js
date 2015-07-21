@@ -6,7 +6,8 @@ var simpleSite = angular.module("simpleSite", [
     "ngAnimate",
     "simpleSiteControllers",
     "simpleSiteServices",
-    "simpleSiteDirectives"
+    "simpleSiteDirectives",
+    "ngLodash"
 ]);
 
 simpleSite.config(["$routeProvider", "$locationProvider",
@@ -22,5 +23,6 @@ function ($routeProvider, $locationProvider) {
     otherwise({
         redirectTo: "/"
     });
+    $locationProvider.html5Mode(true);
 }
 ]);

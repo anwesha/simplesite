@@ -1,0 +1,9 @@
+<div class="ra-tria"></div>
+<div ng-repeat="exp in work.body">
+    <ul class="work-desc-inner work-list" ng-repeat="pos in exp.details" ng-show="currentWorkPos == pos.id" class="ng-hide">
+        <li ng-repeat="info in pos.desc">
+            <span class="num">{{$index + 1}}</span>
+            <span class="info">{{info}}</span>
+        </li>
+    </ul>
+</div>

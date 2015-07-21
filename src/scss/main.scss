@@ -124,7 +124,7 @@ body,html {
 
 .sec-block {
     border-top:$secBorderWd solid #ddd;
-    height:400px;
+    height:420px;
     width: 33%;
     font-size:15px;
     display: inline-block;
@@ -194,7 +194,7 @@ body,html {
 }
 
 
-$workHt: 525px;
+$workHt: 580px;
 
 .work {
     width: 66%;
@@ -219,7 +219,10 @@ $workHt: 525px;
         overflow: hidden;
     }
 
-    .bd { margin:30px 0 0 -10px; }
+    .bd { 
+        margin:30px 0 0 -10px;
+        display:block;
+    }
 
     .pos {
         cursor:pointer;
@@ -346,6 +349,8 @@ $workHt: 525px;
         font-size: 15px;
     }
 }
+
+.work-folio { display:none; }
 
 @media (max-width: 900px) {
 

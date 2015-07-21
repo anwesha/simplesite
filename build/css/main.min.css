@@ -144,7 +144,7 @@ body, html {
 
 .sec-block {
   border-top: 7px solid #ddd;
-  height: 400px;
+  height: 420px;
   width: 33%;
   font-size: 15px;
   display: inline-block;
@@ -219,7 +219,7 @@ body, html {
 .work {
   width: 66%;
   border-top-color: #5D3ED4;
-  height: 525px;
+  height: 580px;
 }
 .work .sec-icon {
   background-image: url("../../src/images/skills.png");
@@ -243,6 +243,7 @@ body, html {
 }
 .work .bd {
   margin: 30px 0 0 -10px;
+  display: block;
 }
 .work .pos {
   cursor: pointer;
@@ -256,7 +257,7 @@ body, html {
 .work-desc {
   background-color: #ececec;
   border-top-color: #927de2;
-  height: 525px;
+  height: 580px;
   position: relative;
 }
 .work-desc .work-desc-inner {
@@ -272,7 +273,7 @@ body, html {
 .ra-tria {
   width: 0;
   height: 0;
-  border-bottom: 518px solid #ececec;
+  border-bottom: 573px solid #ececec;
   border-left: 150px solid transparent;
   position: absolute;
   right: 100%;
@@ -356,6 +357,10 @@ body, html {
   margin-left: 50px;
   line-height: 16px;
   font-size: 15px;
+}
+
+.work-folio {
+  display: none;
 }
 
 @media (max-width: 900px) {

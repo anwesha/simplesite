@@ -1,0 +1,27 @@
+{
+    "header" : "Work Examples",
+    "body": {
+        "thumbs": [
+            {
+                "img": "http://anweshadeb.com/prototype/images/Screen_Thumb.png",
+                "title": "Yahoo Screen",
+                "color": "400090"
+            },
+            {
+                "img": "http://anweshadeb.com/prototype/images/Sports_Thumb.png",
+                "title": "Yahoo Sports",
+                "color": "C22A3C"
+            },
+            {
+                "img": "http://anweshadeb.com/prototype/images/News_Thumb.png",
+                "title": "Yahoo News",
+                "color": "0078FF"
+            },
+            {
+                "img": "http://anweshadeb.com/prototype/images/Homepage_Thumb.png",
+                "title": "Others",
+                "color": "400090"
+            }
+        ]
+    }
+}

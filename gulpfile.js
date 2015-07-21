@@ -52,6 +52,7 @@ gulp.task("optimize-images", function () {
 
 gulp.task("all",  ["scripts", "compass", "optimize-images"]);
 gulp.task("default",  ["scripts", "compass"]);
+gulp.task("scripts",  ["scripts"]);
 
 // Rerun the task when a file changes
 gulp.task('watch', function() {
